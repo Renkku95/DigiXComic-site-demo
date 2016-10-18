@@ -1,0 +1,209 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%; /*fontin peruskoko on 16px*/
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;s
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/*My own style*/
+
+html {
+	height:100%
+}
+
+body {
+	min-height:100%;
+	position: relative;
+	background-color:#CCCCFF;
+}
+
+#kokosivu /*this is the whole page*/
+{
+	
+	min-height:100%;
+}
+
+header { /*header*/
+	background-color:#CCFFCC;
+	height:80px;
+}
+
+#logo { /*website logo*/
+	display:inline-block;
+	float:left;
+}
+
+#profile { /*place for the profile information, box*/
+	float:right;
+	display:inline-block;
+	width:164px;
+	background-color:white;
+	
+	margin-top:1.2em;
+	margin-right: 1em;
+	
+}
+
+#profilepic { /*profile picture*/
+	float:right;
+	display:inline-block;
+}
+
+#searchbox { /*place for the searchbar*/
+	display:inline-block;
+	margin-top:1.2em;
+	margin-left:2em;
+	margin-right:2em;
+	width: 30%;	/*think about this*/
+}
+
+/*searchbar coding starts here*/
+
+input[type=text] {
+	width:100%;
+	height:40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	font-size:20px;
+}
+
+/*input[type=text]:focus {
+	width: 100%;
+}*/ /*this thing changes the size of the searchbar when it's clicked*/
+
+/*searchbar coding ends here*/
+
+
+#menubtnblock {
+	margin:5px;
+}
+
+/*hidden navigation style starts here*/
+
+.sidenav {
+	margin-top:80px;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:#CCFFFF;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.sidenav a {
+	padding:8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size:36px;
+	margin-left: 50px;
+}
+
+/*hidden navigation style ends*/
+
+
+#main { /*this is the page next to the hidden navigation*/
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+section { /*the page, this is where the content goes*/
+	margin-top:4em;
+	margin-bottom:4em;
+	margin-left:auto;
+	margin-right:auto;
+	
+	max-width:1024px;
+	
+	
+	height:100%;
+	
+	background-color:#FFFFCC;
+}
+
+#sivusisalto { /*content*/
+	
+	padding:3em;
+	background-color:#FFCCFF;
+}
+
+#mainnav { /*main navigation*/
+	margin:10px;
+	padding-left:1em;
+	
+}
+
+#subnav { /*sub navigation*/
+	margin:10px;
+	padding-left:1em;
+	padding-top:1em;
+}
+
+footer { /*footer*/
+	position:absolute;
+	bottom:0;
+	background-color:#FFCCCC;
+	width:100%;
+	height:80px;
+	
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
