@@ -203,6 +203,32 @@ footer { /*footer*/
 	
 }
 
+@media screen and (max-width: 588px) {
+	#profile {
+		width: 40px;
+	}
+}
+
+@media screen and (max-width: 422px) {
+	header {
+		height:auto;
+	}
+	#logo {
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		display:block;
+	}
+	#logopic {
+	width:100%;
+	height:100%;
+}
+	#searchbox {
+		width: 50%;
+		margin-bottom: 2em;
+	}
+}
+
 @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
