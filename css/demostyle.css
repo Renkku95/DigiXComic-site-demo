@@ -135,8 +135,6 @@ input[type=text] {
 .sidenav a {
 	padding:8px 8px 8px 32px;
 	text-decoration: none;
-	font-size: 25px;
-	color: #818181;
 	display: block;
 	transition: 0.3s;
 	
@@ -184,7 +182,7 @@ section { /*the page, this is where the content goes*/
 
 #mainnav { /*main navigation*/
 	margin:10px;
-	padding-left:1em;
+	
 	
 }
 
@@ -203,7 +201,15 @@ footer { /*footer*/
 	
 }
 
-@media screen and (max-width: 588px) {
+#footertext { /*text inside the footer bar*/
+	margin-top: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	
+	width:164px;
+}
+
+@media screen and (max-width: 595px) {
 	#profile {
 		width: 40px;
 	}
