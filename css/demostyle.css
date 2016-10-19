@@ -82,6 +82,10 @@ header { /*header*/
 	
 }
 
+#profileboxtext {
+	display:inline-block;
+}
+
 #profilepic { /*profile picture*/
 	float:right;
 	display:inline-block;
@@ -212,6 +216,9 @@ footer { /*footer*/
 @media screen and (max-width: 595px) {
 	#profile {
 		width: 40px;
+	}
+	#profileboxtext {
+		display:none;
 	}
 }
 
