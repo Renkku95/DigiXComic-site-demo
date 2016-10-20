@@ -213,15 +213,54 @@ footer { /*footer*/
 	width:164px;
 }
 
-/*comic icon style*/
+/*site content style starts here*/
+
+
+h1 {
+	font-size:28px;
+}
+
+h2 {
+	font-size:24px;
+	padding:1em;
+}
 
 .comicicon {
+	width:200px;
+	display:inline-block;
+}
+
+.comicinfobox {
+	display:inline-block;
+	width:30%;
+	height:300px;
+	background-color:#FFCCCC;
+	vertical-align:top;
+	margin-top:1em;
+	
+}
+.centrealign {
+	width:200px;
 	margin-left:auto;
 	margin-right:auto;
-	width:200px;
+}
+
+.scrollboxhorizontal {
+	width:100%;
+	height:320px;
+	overflow-x: auto;
+	overflow-y:hidden;
 	
-	margin-top:1em;
-	margin-bottom:1em;
+	white-space:nowrap;
+}
+
+.scrollboxvertical {
+	width:100%;
+	height: 640px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	
+	white-space:nowrap;
 }
 
 @media screen and (max-width: 595px) {
