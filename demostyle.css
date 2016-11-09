@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;s
+	list-style: none;
 }
 table {
 	border-collapse: collapse;
@@ -53,25 +53,44 @@ body {
 	min-height:100%;
 	position: relative;
 	background-color:#CCCCFF;
+	background-image:url('kuvat/background_pattern.png');
 }
 
 #kokosivu /*this is the whole page*/
 {
 	
 	min-height:100%;
-	background-image:url('../kuvat/background_pattern.png');
+	background-image:url('kuvat/splotches_master2.png');                  
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-size: contain;
+
 }
 
 header { /*header*/
 	background-color:#ffffff;
-	border-bottom:solid black 3px;
-	height:150px;
+	border-bottom:solid black 2px;
+	height:14em;
 }
 
 #logo { /*website logo*/
 	display:inline-block;
 	float:left;
+	width:15em;
+	margin-left:1.5em;
+	margin-top:1em;
+	background-color:transparent;
 }
+
+#logo a { /*website logo*/
+	background-color:transparent;
+}
+
+#logopic { /*website logo*/
+	width:32em;
+	background-color:transparent;
+}
+
 
 #profile { /*place for the profile information, box*/
 	float:right;
@@ -93,12 +112,26 @@ header { /*header*/
 	display:inline-block;
 }
 
+#communityLink{ /*Div for the community link*/
+	position:absolute;
+	left:27em;
+	top:0.6em;
+}
+
+#communityLink img{ /*img in the community link*/
+	width: 20em;
+}
+
+
 #searchbox { /*place for the searchbar*/
+	position:absolute; /* For Searchbox Placement*/
 	display:inline-block;
-	margin-top:1.2em;
+	margin-top:auto/*1.2em*/;
 	margin-left:2em;
 	margin-right:2em;
-	width: 30%;	/*think about this*/
+	top:10em; /* For Searchbox Placement*/
+	left:45em; /* For Searchbox Placement*/
+	width: 25%;	/*think about this*/
 }
 
 /*searchbar coding starts here*/
@@ -120,10 +153,9 @@ input[type=text] {
 
 #menubtnblock {
 	margin-top:20px;
-	/*position:relative;*/
 	position: fixed;
 	z-index: 1;
-	top: 100;
+	top: 15em;;
 	left: 0;
 	padding-top: 60px;
 	transition: 0.5s;
@@ -137,19 +169,35 @@ input[type=text] {
 
 
 /*hidden navigation style starts here*/
+#menuheader{
+	margin-top:-80px;
+	position:fixed;
+	top:24em;
+	width:0;
+	transition: 0.5s;
+	}
+
+#menuheader img{
+	width:50%;
+	height:50%;
+}
 
 .sidenav {
 	margin-top:80px;
-	height: 100%;
+	height: 45em;
 	width: 0;
 	position: fixed;
 	z-index: 1;
 	top: 100;
 	left: 0;
-	background-color:#CCFFFF;
+	background-color:#f8f8f8;
 	overflow-x: hidden;
 	padding-top: 60px;
 	transition: 0.5s;
+	border-top:solid black 2px;
+	border-right:solid black 2px;
+	border-bottom:solid black 2px;
+	border-radius: 3px;
 }
 
 .sidenav a {
@@ -164,22 +212,23 @@ input[type=text] {
 	color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+/*.sidenav .closebtn {
 	position: absolute;
 	top: 0;
 	right: 25px;
 	font-size:36px;
 	margin-left: 50px;
-}
+}*/
 
 /*hidden navigation style ends*/
 
 
 #main { /*this is the page next to the hidden navigation*/
-	transition: margin-left .5s;
+	transition: .5s;
 	padding: 20px;
+	margin-left:4em;
+	margin-right:4em;
 }
-
 section { /*the page, this is where the content goes*/
 	margin-top:4em;
 	margin-bottom:4em;
@@ -191,13 +240,13 @@ section { /*the page, this is where the content goes*/
 	
 	height:100%;
 	
-	background-color:#FFFFCC;
+	/*background-color:#FFFFCC;*/
 }
 
 #sivusisalto { /*content*/
 	
 	padding:3em;
-	background-color:#FFCCFF;
+	background-color:transparent;
 }
 
 #mainnav { /*main navigation*/
@@ -231,7 +280,6 @@ footer { /*footer*/
 
 /*site content style starts here*/
 
-
 h1 {
 	font-size:28px;
 }
@@ -244,7 +292,29 @@ h2 {
 .comicicon {
 	width:200px;
 	display:inline-block;
+	margin-right:auto;
+	margin-left:auto;
 }
+
+.comicicon a {
+	height:100%;
+	width:100%;
+}
+
+
+.comicicon a img {
+	height:100%;
+	width:auto;
+	margin:auto;
+}
+
+
+.comicicon img {
+	height:100%;
+	width:auto;
+	margin:auto;
+}
+
 
 .comicinfobox {
 	display:inline-block;
@@ -263,6 +333,14 @@ h2 {
 	margin-right:auto;
 }
 
+.adHolder {
+	width:100%;
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
 .scrollboxhorizontal {
 	width:100%;
 	height:320px;
@@ -270,6 +348,7 @@ h2 {
 	overflow-y:hidden;
 	
 	white-space:nowrap;
+	display:flex;
 }
 
 .scrollboxvertical {
@@ -317,4 +396,11 @@ h2 {
 @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
+}
+
+.whiteBox{
+	background-color:rgba(255,255,255,0.95);
+	padding:2em;
+	border:solid black 2px;
+	border-radius:0.3em;
 }
