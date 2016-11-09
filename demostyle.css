@@ -95,8 +95,8 @@ header { /*header*/
 #profile { /*place for the profile information, box*/
 	float:right;
 	display:inline-block;
-	width:164px;
-	background-color:white;
+	width:250px;
+	background-color:#CCFFFF;
 	
 	margin-top:1.2em;
 	margin-right: 1em;
@@ -132,6 +132,15 @@ header { /*header*/
 	top:10em; /* For Searchbox Placement*/
 	left:45em; /* For Searchbox Placement*/
 	width: 25%;	/*think about this*/
+}
+
+.searchicon { /*this is div for magnifying glass image*/
+	display:inline-block;
+}
+
+.searchbar { /*searchbar is in this div*/
+	display:inline-block;
+	width:80%; /*???*/
 }
 
 /*searchbar coding starts here*/
@@ -281,12 +290,14 @@ footer { /*footer*/
 /*site content style starts here*/
 
 h1 {
-	font-size:28px;
+	font-size:36pt;
+	/*Dillenia UPC Bold*/
 }
 
 h2 {
-	font-size:24px;
+	font-size:30pt;
 	padding:1em;
+	/*Dillenia UPC Regular*/
 }
 
 .comicicon {

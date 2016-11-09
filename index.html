@@ -28,19 +28,37 @@
 
 		<div id="searchbox"> <!--place for search bar-->
 			
-			<form> <!--searchbar-->
+			<div class="searchicon"> <!--searchicon-->
+			<img alt="searchicon" height="44" src="kuvat/magnifying_glass.png" width="41" /> <!--search icon-->
+			</div><!--searchicon-->
+			
+			<div class="searchbar"><!--searchbar-->
+			<form> 
 			<input type="text" name="search" placeholder="Search...">
 			</form>
+			</div> <!--searchbar-->
 			
 		</div>
 		
 		<div id="profile"> <!--profile info box-->
-			<div id="profileboxtext">
-				<a href="myprofile.html">My profile</a>
-			</div>
+		
+			<div class="col-sm-6" id="profileboxtext"> <!--profilebox text and flag-->
+			
+				<a href="myprofile.html">Your Page</a>
+				
+				<img alt="languageflag" height="52" src="kuvat/lippu.png" width="92" />
+			
+			</div> <!--profilebox text and flag-->
+			
+			
+			<div class="col-sm-6"> <!--profile picture slot-->
+			
 			<a href="myprofile.html"> <!--link to profile page-->
 				<img id="profilepic" alt="profile-icon" height="40" src="kuvat/profile-icon.png" width="40" />
 			</a>
+			
+			</div> <!--profile picture slot-->
+			
 		</div>
 	
 	</header> 
