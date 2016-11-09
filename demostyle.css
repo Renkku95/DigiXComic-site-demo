@@ -71,6 +71,9 @@ header { /*header*/
 	background-color:#ffffff;
 	border-bottom:solid black 2px;
 	height:14em;
+	position:fixed;
+	width:100%;
+	z-index:99; /*if other elements on the page use z-index, this value needs to be bigger*/
 }
 
 #logo { /*website logo*/
@@ -105,6 +108,14 @@ header { /*header*/
 
 #profileboxtext {
 	display:inline-block;
+	padding:1em;
+	float:left;
+}
+
+#profileboxpic {
+	display:inline-block;
+	padding: 1em;
+	float:right;
 }
 
 #profilepic { /*profile picture*/
@@ -239,12 +250,13 @@ input[type=text] {
 	margin-right:4em;
 }
 section { /*the page, this is where the content goes*/
-	margin-top:4em;
+	margin-top:14em;
 	margin-bottom:4em;
 	/*margin-left:auto;
 	margin-right:auto;*/
 	
 	/*max-width:1024px;*/
+	
 	
 	
 	height:100%;
@@ -371,16 +383,97 @@ h2 {
 	white-space:nowrap;
 }
 
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 1050px) {
+
+	header {
+	min-height:210px;
+	height:25%;
+}
+
+	#logo {
+	min-width:150px;
+	width:30%;
+	
+	}
+	#logopic {
+		width:100%;
+	}
+	
+	#communityLink {
+		left:30%;
+		min-width:150px;
+		width:30%;
+	}
+	#communityLink img {
+	width:100%;
+	}
+	
 	#profile {
-		width: 40px;
+	max-width:30%;
 	}
 	#profileboxtext {
-		display:none;
+	width:50%;
+	}
+	
+	#searchbox {
+	left:30%;
+	width:30%;
+	top:70%;
 	}
 }
 
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 765px) {
+
+	header {
+	min-height:180px;
+}
+	#searchbox {
+	width:235px;
+}
+
+	#flagprof {
+	width:30px;
+	height:17px;
+	}
+	
+	#magnifyingglass {
+	width:20px;
+	height:21px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+
+	#profile {
+	 width:70px;
+	}
+	#profileboxtext {
+		display:none;
+		width:0;
+	}
+	
+	#searchbox {
+	left: 20%;
+	}
+	
+	
+}
+
+@media screen and (max-width: 500px) {
+
+	header {
+	min-width:150px;
+	}
+	#communityLink {
+		display:none;
+	}
+	
+	#searchbox {
+	left:1em;
+	}
+}
+
+/*@media screen and (max-width: 422px) {
 	header {
 		height:auto;
 	}
@@ -403,6 +496,7 @@ h2 {
 		margin-bottom: 2em;
 	}
 }
+*/
 
 @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
