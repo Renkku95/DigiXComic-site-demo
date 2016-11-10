@@ -73,7 +73,7 @@ header { /*header*/
 	height:14em;
 	position:fixed;
 	width:100%;
-	z-index:99; /*if other elements on the page use z-index, this value needs to be bigger*/
+	z-index:80; /*if other elements on the page use z-index, this value needs to be bigger, but not bigger than menu*/
 }
 
 #logo { /*website logo*/
@@ -190,7 +190,7 @@ input[type=text] {
 
 /*hidden navigation style starts here*/
 #menuheader{
-	margin-top:-80px;
+	margin-top:-305px;
 	position:fixed;
 	top:24em;
 	width:0;
@@ -207,7 +207,7 @@ input[type=text] {
 	height: 45em;
 	width: 0;
 	position: fixed;
-	z-index: 1;
+	z-index: 100;
 	top: 100;
 	left: 0;
 	background-color:#f8f8f8;
