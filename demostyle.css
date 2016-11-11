@@ -383,13 +383,16 @@ h2 {
 	white-space:nowrap;
 }
 
+.comicreadmore {
+	padding-top:10px;
+}
 
 @media screen and (max-width: 1050px) {
 
 	header {
-	min-height:210px;
-	height:25%;
-}
+	min-height:150px;
+	height:15%;
+	}
 
 	#logo {
 	min-width:150px;
@@ -403,7 +406,7 @@ h2 {
 	#communityLink {
 		left:30%;
 		min-width:150px;
-		width:30%;
+		width:20%;
 	}
 	#communityLink img {
 	width:100%;
@@ -417,16 +420,43 @@ h2 {
 	}
 	
 	#searchbox {
-	left:30%;
+	left:32%;
 	width:30%;
-	top:70%;
+	top:50%;
 	}
+	
+		
+}
+
+@media screen and (max-width: 900px) {
+
+	h2 {
+	font-size:18pt;
+	padding:0.5em;
+	}
+
+	.comicinfobox {
+	height:150px;
+	}
+	
+	.centrealign {
+	width:100px;
+	}
+	.comicicon {
+	width: 100px;
+	height: 150px;
+	}
+	
+	.comicinfotext {
+	display:none;
+	}
+	
 }
 
 @media screen and (max-width: 767px) {
 
 	header {
-	min-height:180px;
+	min-height:120px;
 	}
 	#searchbox {
 	width:235px;
@@ -446,8 +476,13 @@ h2 {
 	
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
 
+	#logo {
+	min-width:100px;
+	width:
+	}
+	
 	#profile {
 	 width:70px;
 	}
@@ -457,7 +492,7 @@ h2 {
 	}
 	
 	#searchbox {
-	left: 20%;
+	left: 30%;
 	}
 	
 	
@@ -466,14 +501,14 @@ h2 {
 @media screen and (max-width: 500px) {
 
 	header {
-	min-width:150px;
+	min-height:100px;
 	}
 	#communityLink {
 		display:none;
 	}
 	
 	#searchbox {
-	left:1em;
+	
 	}
 }
 
