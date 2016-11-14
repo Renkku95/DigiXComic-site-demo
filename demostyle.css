@@ -125,6 +125,20 @@ header { /*header*/
 	display:inline-block;
 }
 
+#yourpagelink {
+	background:#bdbdbd;
+	padding:0.5em;
+	margin-bottom:1em;
+	border: solid #757575 1px;
+	border-right: solid #757575 2px;
+	border-bottom: solid #757575 5px;
+	border-radius:5px;
+}
+
+#yourpagelink a {
+	color:white;
+}
+
 #communityLink{ /*Div for the community link*/
 	position:absolute;
 	left:27em;
@@ -154,6 +168,35 @@ header { /*header*/
 .searchbar { /*searchbar is in this div*/
 	display:inline-block;
 	width:80%; /*???*/
+	
+}
+
+.searchbar input {
+	padding-left:0.5em;
+	color: white;
+	outline: none;
+	background:#bdbdbd;
+	border: solid #757575 1px;
+	border-right: solid #757575 2px;
+	border-bottom: solid #757575 5px;
+	border-radius:2px;
+
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
 }
 
 /*searchbar coding starts here*/
@@ -230,6 +273,21 @@ input[type=text] {
 	
 }
 
+.sidenav li {
+	width:100%;
+	margin-bottom: 1em;
+	background:#bdbdbd;
+	border: solid #757575 1px;
+	border-right: solid #757575 2px;
+	border-bottom: solid #757575 5px;
+	border-radius:2px;
+
+}
+
+.sidenav li a {
+	color:white;
+}
+
 .sidenav a:hover, .offcanvas a:focus {
 	color: #f1f1f1;
 }
@@ -273,15 +331,13 @@ section { /*the page, this is where the content goes*/
 }
 
 #mainnav { /*main navigation*/
-	margin:10px;
-	
-	
+	margin:10px;	
 }
 
 #subnav { /*sub navigation*/
+	width:100%;
 	margin:10px;
-	padding-left:1em;
-	padding-top:1em;
+	padding-top:0.5em;
 }
 
 footer { /*footer*/
