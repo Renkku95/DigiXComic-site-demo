@@ -430,7 +430,18 @@ h2 {
 	top:50%;
 	}
 	
-		
+	.sidenav {
+	margin-top: 200px;
+	}
+	
+	#menuheader {
+	margin-top: -185px;
+	}
+	
+	#menubtnblock {
+	margin-top: -85px;
+	}
+
 }
 
 @media screen and (max-width: 900px) {
