@@ -473,6 +473,7 @@ h2 {
 	#communityLink {
 		left:30%;
 		min-width:150px;
+		min-height:40px;
 		width:20%;
 	}
 	#communityLink img {
@@ -637,6 +638,8 @@ h2 {
 	}
 	#communityLink img {
 	width:50%;
+	min-width:150px;
+	min-height:40px;
 	}
 	
 	#searchbox {
