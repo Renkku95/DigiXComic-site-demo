@@ -230,14 +230,29 @@
 </div>
 
 <script> <!--navigation js-->
-function openNav() {
-    document.getElementById("mySidenav").style.width = "164px"; /*the logo width here?*/
-    document.getElementById("main").style.marginLeft = "250px";
-}
+var click = 0;
 
-function closeNav() {
+function openNav() {
+if (click == 0){
+    document.getElementById("mySidenav").style.width = "164px"; /*the logo width here?*/
+    document.getElementById("menuheader").style.width = "15em"; /*Navigation header*/
+    document.getElementById("menuheader").style.top = "21.8em"; /*Navigation header*/
+    document.getElementById("main").style.marginLeft = "15em";
+    document.getElementById("menubtnblock").style.marginLeft = "164px"; /*Menu Button Movement*/
+    click++;
+}
+/*}
+
+function closeNav() { We use only one function*/
+else if (click == 1){
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "auto"; /*margin-left of section*/
+    document.getElementById("menuheader").style.width = "0";/*Navigation header*/
+    document.getElementById("menuheader").style.top = "24em"; /*Navigation header*/
+
+    document.getElementById("main").style.marginLeft= "4em"; /*margin-left of section*/
+    document.getElementById("menubtnblock").style.marginLeft= "0"; /*Menu Button Movement*/
+    click--;
+    }
 }
 </script>
 
