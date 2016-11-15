@@ -300,6 +300,7 @@ input[type=text] {
 	margin-left: 50px;
 }*/
 
+
 /*hidden navigation style ends*/
 
 
@@ -330,14 +331,14 @@ section { /*the page, this is where the content goes*/
 	background-color:transparent;
 }
 
-#mainnav { /*main navigation*/
-	margin:10px;	
+#mainnav {
+	display: none; /*COMIC and COMMUNITY buttons HIDDEN*/
 }
 
 #subnav { /*sub navigation*/
 	width:100%;
-	margin:10px;
-	padding-top:0.5em;
+	margin:15px;
+	margin-top: -40px;
 }
 
 footer { /*footer*/
