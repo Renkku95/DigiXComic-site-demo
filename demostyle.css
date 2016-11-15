@@ -67,6 +67,16 @@ body {
 
 }
 
+@font-face {
+	font-family: myFont;
+	src: url(fonts/upcdl.ttf);
+}
+
+@font-face {
+	font-family: myFontBold;
+	src: url(fonts/upcdb.ttf);
+}
+
 header { /*header*/
 	background-color:#ffffff;
 	border-bottom:solid black 2px;
@@ -137,6 +147,7 @@ header { /*header*/
 
 #yourpagelink a {
 	color:white;
+	font-family:Corbel;
 }
 
 #communityLink{ /*Div for the community link*/
@@ -174,6 +185,7 @@ header { /*header*/
 .searchbar input {
 	padding-left:0.5em;
 	color: white;
+	font-family:Corbel;
 	outline: none;
 	background:#bdbdbd;
 	border: solid #757575 1px;
@@ -286,6 +298,7 @@ input[type=text] {
 
 .sidenav li a {
 	color:white;
+	font-family:Corbel;
 }
 
 .sidenav a:hover, .offcanvas a:focus {
@@ -362,13 +375,19 @@ footer { /*footer*/
 
 h1 {
 	font-size:36pt;
+	font-family: myFontBold;
 	/*Dillenia UPC Bold*/
 }
 
 h2 {
 	font-size:30pt;
+	font-family: myFont;
 	padding:1em;
 	/*Dillenia UPC Regular*/
+}
+
+p {
+	font-family: Calibri Light;
 }
 
 hr {
