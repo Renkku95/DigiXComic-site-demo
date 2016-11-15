@@ -6,6 +6,7 @@
 <title>DigiXComic library</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="demostyle.css" rel="stylesheet" type="text/css" />
+<link href="css/flickity.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -16,25 +17,51 @@
 	
 		<div id="logo"> <!--logo-->
 			<a href="index.html"> <!--link to homepage-->
-				<img id="logopic" alt="logo" height="80" src="kuvat/logo.png" width="164" />
+				<img id="logopic" alt="logo" src="kuvat/digixcomic_kokologovektori_isompi.png" />
 			</a>
 		</div>
 		
+		<div id="communityLink"> <!--Link to Community-->
+		
+			<a href="community.html"><img src="kuvat/gotocommunity_button.png" alt="To Community"/></a> <!--link to community page-->
+						
+		</div>
+
 		<div id="searchbox"> <!--place for search bar-->
 			
-			<form> <!--searchbar-->
+			<div class="searchicon"> <!--searchicon-->
+			<img id="magnifyingglass" alt="searchicon" height="44" src="kuvat/magnifying_glass.png" width="41" /> <!--search icon-->
+			</div><!--searchicon-->
+			
+			<div class="searchbar"><!--searchbar-->
+			<form> 
 			<input type="text" name="search" placeholder="Search...">
 			</form>
+			</div> <!--searchbar-->
 			
 		</div>
 		
 		<div id="profile"> <!--profile info box-->
-			<div id="profileboxtext">
-				<a href="myprofile.html">My profile</a>
-			</div>
+		
+			<div class="col-sm-6" id="profileboxtext"> <!--profilebox text and flag-->
+				
+				<div id="yourpagelink">
+				<a href="myprofile.html">Your Page</a>
+				</div>
+				
+				<img id="flagprof" alt="languageflag" height="52" src="kuvat/lippu.png" width="92" />
+			
+			</div> <!--profilebox text and flag-->
+			
+			
+			<div class="col-sm-6" id="profileboxpic"> <!--profile picture slot-->
+			
 			<a href="myprofile.html"> <!--link to profile page-->
 				<img id="profilepic" alt="profile-icon" height="40" src="kuvat/profile-icon.png" width="40" />
 			</a>
+			
+			</div> <!--profile picture slot-->
+			
 		</div>
 	
 	</header> 
@@ -43,7 +70,8 @@
 	
 	
 	<div id="mySidenav" class="sidenav"> <!--this is the navigation bar-->
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> Lets call everything in the openNav function so we need les stuff -->
+		<span id="menuheader"><img src="kuvat/menutab.png" alt="Menu" /></span> <!-- Menu Header Image -->
 		
 		
 		<ul class="nav navbar-nav">
@@ -57,13 +85,13 @@
 					<a href="community.html">Community</a> <!--link to community page-->
 				</li>
 			
-			</div>
+			</div> <!--main navigation-->
 		</ul>
 		
 		<ul class="nav navbar-nav">
 		
 			<div id="subnav" class="navbar"> <!--sub navigation-->
-		
+			
 				<li>
 					<a href="publish.html">Publish</a>
 				</li>
@@ -74,14 +102,14 @@
 					<a href="support.html">Support</a>
 				</li>
 			
-			</div>
+			</div> <!--sub navigation-->
 		</ul>
 		
-	</div>
+	</div> <!--mySidenav-->
 	
 	<div id="menubtnblock"><!--navigation button-->
 	<span onclick="openNav()">
-	<img alt="menubutton" height="40" src="kuvat/menubutton.png" width="40" /></span>
+	<img alt="menubutton" height="40" src="kuvat/menu_opentab.png" width="40" /></span>
 	</div>
 	
 	
@@ -91,7 +119,7 @@
 		
 			<div class="row" id="sivusisalto"> <!--content-->
 			
-				<div class="col-sm-3"> <!--library navigation-->
+				<div class="col-sm-3 whiteBox"> <!--library navigation-->
 					<a href="library.html"><h1>Library</h1></a>
 					<br>
 					<li>
@@ -181,39 +209,50 @@
 					
 					<h2>Recommended</h2>
 					<br>
-					<div class="scrollboxhorizontal"> <!--recommended row-->
+					<div class="whiteBox"> <!--recommended row-->
 					
-					
+						<div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
 						
-						<div class="comicicon"> <!--this link goes to series-->
-							<a href="series.html">
-						<img alt="comicicon1" height="300" src="kuvat/comicicon3.png" width="200" />
-							</a>
-						</div> <!--series link-->
+							<div class="carousel-cell"> <!--this link goes to series-->
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="series.html">
+									<img alt="comicicon1" height="300" src="kuvat/comicicon3.png" width="200" />
+								</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div> <!--series link-->
 						
-						<div class="comicicon">
-						<img alt="comicicon2" height="300" src="kuvat/comicicon4.png" width="200" />
-						</div>
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<img alt="comicicon2" height="300" src="kuvat/comicicon4.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
+							
 						
-						<div class="comicicon">
-						<img alt="comicicon2" height="300" src="kuvat/comicicon5.png" width="200" />
-						</div>
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<img alt="comicicon2" height="300" src="kuvat/comicicon5.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
 
 					
 						
-						<div class="comicicon">
-						<img alt="comicicon2" height="300" src="kuvat/comicicon2.png" width="200" />
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<img alt="comicicon2" height="300" src="kuvat/comicicon2.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
+						
+					
+					
+						
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<img alt="comicicon3" height="300" src="kuvat/comicicon1.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
+						
+					
 						</div>
-						
-					
-					
-						
-						<div class="comicicon">
-						<img alt="comicicon3" height="300" src="kuvat/comicicon1.png" width="200" />
-						</div>
-						
-					
-					
 											
 					
 					</div> <!--recommended row-->
@@ -222,42 +261,53 @@
 					<h2>Best sellers</h2>
 				<br>
 				
-					<div class="scrollboxhorizontal"> <!--Bestsellers-->
+					<div class="whiteBox"> <!--Bestsellers-->
 					
+						<div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
 					
-						<div class="comicicon">
-						<img alt="comicicon1" height="300" src="kuvat/comicicon4.png" width="200" />
-						</div>
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<img alt="comicicon1" height="300" src="kuvat/comicicon4.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
 						
-						<div class="comicicon">
-						<img alt="comicicon2" height="300" src="kuvat/comicicon5.png" width="200" />
-						</div>
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<img alt="comicicon2" height="300" src="kuvat/comicicon5.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
 
 
 					
 						
-						<div class="comicicon">
-						<img alt="comicicon1" height="300" src="kuvat/comicicon1.png" width="200" />
-						</div>
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<img alt="comicicon1" height="300" src="kuvat/comicicon1.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
 						
 					
 					
 						
-						<div class="comicicon">
-						<img alt="comicicon2" height="300" src="kuvat/comicicon2.png" width="200" />
-						</div>
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<img alt="comicicon2" height="300" src="kuvat/comicicon2.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
 						
 					
 					
 						
-						<div class="comicicon"> <!--this link goes to series-->
-							<a href="series.html">
-						<img alt="comicicon1" height="300" src="kuvat/comicicon3.png" width="200" />
-							</a>
-						</div> <!--series link-->
+							<div class="carousel-cell"> <!--this link goes to series-->
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="series.html">
+								<img alt="comicicon1" height="300" src="kuvat/comicicon3.png" width="200" />
+								</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div> <!--series link-->
 
 					
-					
+						</div>
 											
 					
 					</div> <!--Bestsellers-->
@@ -266,39 +316,49 @@
 					<h2>New releases</h2>
 					<br>
 				
-						<div class="scrollboxhorizontal"> <!--New releases-->
+						<div class="whiteBox"> <!--New releases-->
 					
-					
+							<div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
 						
-							<div class="comicicon">
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<img alt="comicicon1" height="300" src="kuvat/comicicon1.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							</div>
 						
 					
 					
 						
-							<div class="comicicon">
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<img alt="comicicon2" height="300" src="kuvat/comicicon2.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							</div>
 						
 					
-							<div class="comicicon">
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<img alt="comicicon2" height="300" src="kuvat/comicicon5.png" width="200" />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
 
 						
-							<div class="comicicon"> <!--this link goes to series-->
+							<div class="carousel-cell"> <!--this link goes to series-->
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<a href="series.html">
 						<img alt="comicicon1" height="300" src="kuvat/comicicon3.png" width="200" />
 							</a>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</div> <!--series link-->
 
 						
-							<div class="comicicon">
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<img alt="comicicon2" height="300" src="kuvat/comicicon4.png" width="200" />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
 
-					
+						</div> <!--carousel-->
 												
 					
 						</div> <!--new releases-->
@@ -307,39 +367,50 @@
 					<h2>Just updated</h2>
 					<br>
 				
-						<div class="scrollboxhorizontal"> <!--Just updated-->
+						<div class="whiteBox"> <!--Just updated-->
 					
-					
+							<div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
 						
-							<div class="comicicon">
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<img alt="comicicon1" height="300" src="kuvat/comicicon1.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							</div>
 						
 					
 					
 						
-							<div class="comicicon">
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<img alt="comicicon2" height="300" src="kuvat/comicicon2.png" width="200" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							</div>
 						
 					
 					
 						
-								<div class="comicicon"> <!--this link goes to series-->
+								<div class="carousel-cell"> <!--this link goes to series-->
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<a href="series.html">
 						<img alt="comicicon1" height="300" src="kuvat/comicicon3.png" width="200" />
 							</a>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</div> <!--series link-->
 					
 					
-							<div class="comicicon">
+							<div class="carousel-cell">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<img alt="comicicon2" height="300" src="kuvat/comicicon4.png" width="200" />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
 
-						<div class="comicicon">
+						<div class="carousel-cell">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<img alt="comicicon2" height="300" src="kuvat/comicicon5.png" width="200" />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
 					
+						</div> <!--carousel-->
 					
 						</div> <!--just updated-->
 
@@ -376,6 +447,10 @@ function closeNav() {
     document.getElementById("main").style.marginLeft= "auto"; /*margin-left of section*/
 }
 </script>
+
+<!--carousel flickity-->
+<script src="js/flickity.pkgd.min.js"></script>
+
 
 </body>
 

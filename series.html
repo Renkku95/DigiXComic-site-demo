@@ -17,34 +17,62 @@
 	
 		<div id="logo"> <!--logo-->
 			<a href="index.html"> <!--link to homepage-->
-				<img id="logopic" alt="logo" height="80" src="kuvat/logo.png" width="164" />
+				<img id="logopic" alt="logo" src="kuvat/digixcomic_kokologovektori_isompi.png" />
 			</a>
 		</div>
 		
+		<div id="communityLink"> <!--Link to Community-->
+		
+			<a href="community.html"><img src="kuvat/gotocommunity_button.png" alt="To Community"/></a> <!--link to community page-->
+						
+		</div>
+
 		<div id="searchbox"> <!--place for search bar-->
 			
-			<form> <!--searchbar-->
+			<div class="searchicon"> <!--searchicon-->
+			<img id="magnifyingglass" alt="searchicon" height="44" src="kuvat/magnifying_glass.png" width="41" /> <!--search icon-->
+			</div><!--searchicon-->
+			
+			<div class="searchbar"><!--searchbar-->
+			<form> 
 			<input type="text" name="search" placeholder="Search...">
 			</form>
+			</div> <!--searchbar-->
 			
 		</div>
 		
 		<div id="profile"> <!--profile info box-->
-			<div id="profileboxtext">
-				<a href="myprofile.html">My profile</a>
-			</div>
+		
+			<div class="col-sm-6" id="profileboxtext"> <!--profilebox text and flag-->
+				
+				<div id="yourpagelink">
+				<a href="myprofile.html">Your Page</a>
+				</div>
+				
+				<img id="flagprof" alt="languageflag" height="52" src="kuvat/lippu.png" width="92" />
+			
+			</div> <!--profilebox text and flag-->
+			
+			
+			<div class="col-sm-6" id="profileboxpic"> <!--profile picture slot-->
+			
 			<a href="myprofile.html"> <!--link to profile page-->
 				<img id="profilepic" alt="profile-icon" height="40" src="kuvat/profile-icon.png" width="40" />
 			</a>
+			
+			</div> <!--profile picture slot-->
+			
 		</div>
 	
 	</header> 
+ 
 	
 	
 	
 	
 	<div id="mySidenav" class="sidenav"> <!--this is the navigation bar-->
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> Lets call everything in the openNav function so we need les stuff -->
+		<span id="menuheader"><img src="kuvat/menutab.png" alt="Menu" /></span> <!-- Menu Header Image -->
 		
 		
 		<ul class="nav navbar-nav">
@@ -58,13 +86,13 @@
 					<a href="community.html">Community</a> <!--link to community page-->
 				</li>
 			
-			</div>
+			</div> <!--main navigation-->
 		</ul>
 		
 		<ul class="nav navbar-nav">
 		
 			<div id="subnav" class="navbar"> <!--sub navigation-->
-		
+			
 				<li>
 					<a href="publish.html">Publish</a>
 				</li>
@@ -75,14 +103,14 @@
 					<a href="support.html">Support</a>
 				</li>
 			
-			</div>
+			</div> <!--sub navigation-->
 		</ul>
 		
-	</div>
+	</div> <!--mySidenav-->
 	
 	<div id="menubtnblock"><!--navigation button-->
 	<span onclick="openNav()">
-	<img alt="menubutton" height="40" src="kuvat/menubutton.png" width="40" /></span>
+	<img alt="menubutton" height="40" src="kuvat/menu_opentab.png" width="40" /></span>
 	</div>
 	
 	
@@ -92,7 +120,7 @@
 		
 			<div class="row" id="sivusisalto"> <!--content-->
 			
-				<div class="col-sm-3"> <!--library navigation-->
+				<div class="col-sm-3 whiteBox"> <!--library navigation-->
 					<a href="library.html"><h1>Library</h1></a>
 					<br>
 					<li>
@@ -173,13 +201,15 @@
 				
 				<div class="col-sm-9"> <!--content boxes-->
 				
+					<div class="col-sm-12 whiteBox">
+				
 					<div class="col-sm-5"> <!--cover-->
 					
 						<img alt="kansi" height="300" src="kuvat/comicicon3.png" width="200" />
 					
 					</div> <!--cover-->
 					
-					<div class="col-sm-7 whiteBox"> <!--series info-->
+					<div class="col-sm-7"> <!--series info-->
 					
 					<h2>Koston siivet</h2>
 					<p>
@@ -203,6 +233,8 @@
 					</p>
 					
 					</div> <!--series info-->
+					
+					</div> <!--whitebox-->
 				
 					<div class="col-sm-12">
 					<h2>Ongoing</h2>
