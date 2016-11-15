@@ -371,6 +371,11 @@ h2 {
 	/*Dillenia UPC Regular*/
 }
 
+hr {
+	display:block;
+	border-top:solid black 2px;
+}
+
 .comicicon {
 	width:200px;
 	display:inline-block;
@@ -659,8 +664,7 @@ h2 {
 	}
 	
 	#flagprof {
-	width:30px;
-	height:17px;
+	display:none;
 	}
 
 	.sidenav {
