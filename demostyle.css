@@ -539,6 +539,17 @@ hr {
 	color:#757575;
 }
 
+.friendbox {
+	margin-top:1em;
+	margin-left:0.8em;
+	margin-right: 0em;
+}
+
+.friendboxl {
+	margin-top:1em;
+	margin-left:-0.8em;
+}
+
 @media screen and (max-width: 1050px) {
 
 	header {
