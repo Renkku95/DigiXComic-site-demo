@@ -393,6 +393,13 @@ h2 {
 	/*Dillenia UPC Regular*/
 }
 
+h3 {
+	font-size: 20pt;
+	font-family: myFont;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
 p {
 	font-family: Calibri Light;
 }
@@ -506,6 +513,17 @@ hr {
 .editbtn a:hover {
 	text-decoration: none;
 	color: #757575;
+}
+
+.categoryrow a{
+	color:black;
+	font-size:20pt;
+	font-family:myFont;
+}
+
+.categoryrow a:hover {
+	text-decoration: none;
+	color:#757575;
 }
 
 @media screen and (max-width: 1050px) {
