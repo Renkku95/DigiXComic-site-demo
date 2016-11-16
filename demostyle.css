@@ -526,6 +526,19 @@ hr {
 	color:#757575;
 }
 
+.libmenu li {
+	font-family:Calibri Light;
+}
+
+.libmenu a {
+	color:black;
+}
+
+.libmenu a:hover {
+	text-decoration: none;
+	color:#757575;
+}
+
 @media screen and (max-width: 1050px) {
 
 	header {
