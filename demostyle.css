@@ -111,7 +111,7 @@ header { /*header*/
 	float:right;
 	display:inline-block;
 	width:250px;
-	background-color:#CCFFFF;
+	
 	
 	margin-top:1.2em;
 	margin-right: 1em;
@@ -560,6 +560,17 @@ hr {
 	width:50%;
 	}
 	
+	#hdpricon {
+	width: 75px;
+	height: 75px;
+	float:right;
+	}
+	
+	#flagprof {
+	width:30px;
+	height:17px;
+	}
+	
 	#searchbox {
 	left:32%;
 	width:30%;
@@ -614,10 +625,7 @@ hr {
 	width:235px;
 	}
 
-	#flagprof {
-	width:30px;
-	height:17px;
-	}
+	
 	
 	#magnifyingglass {
 	width:20px;
@@ -730,10 +738,17 @@ hr {
 	max-height:70%;
 	}
 	
-	#flagprof {
-	display:none;
+	#hdpricon {
+	width: 50px;
+	height: 50px;
+	float:right;
 	}
 
+	#flagprof {
+	display: none;
+	}
+
+	
 	.sidenav {
 	margin-top: 200px;
 	}
