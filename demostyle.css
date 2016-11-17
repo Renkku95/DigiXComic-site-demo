@@ -64,6 +64,7 @@ body {
     background-repeat:   no-repeat;
     background-position: center center; 
     background-size: contain;
+   
 
 }
 
@@ -381,14 +382,18 @@ footer { /*footer*/
 /*site content style starts here*/
 
 h1 {
-	font-size:36pt;
+	
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size:42pt;
 	font-family: myFontBold;
 	/*Dillenia UPC Bold*/
 }
 
 h2 {
+	
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	font-size:30pt;
-	font-family: myFont;
+	font-family: myFontBold;
 	padding:1em;
 	/*Dillenia UPC Regular*/
 }
@@ -548,6 +553,19 @@ hr {
 .friendboxl {
 	margin-top:1em;
 	margin-left:-0.8em;
+}
+
+.communitynav p {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.communitylink a {
+	color:black;
+	font-family:Calibri Light;
+}
+.communitylink a:hover {
+	text-decoration:none;
+	color:#757575;
 }
 
 @media screen and (max-width: 1050px) {
