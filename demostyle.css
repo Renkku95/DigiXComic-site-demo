@@ -1055,7 +1055,10 @@ and (min-width: 501px) {
 		margin-bottom:1em;
 	}
 	
-		
+	#profprof {
+		width:100px;
+		height:100px;
+	}	
 
 
 }
