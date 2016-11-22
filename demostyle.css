@@ -545,17 +545,6 @@ hr {
 	color:#757575;
 }
 
-.friendbox {
-	margin-top:1em;
-	margin-left:0.8em;
-	margin-right: 0em;
-}
-
-.friendboxl {
-	margin-top:1em;
-	margin-left:-0.8em;
-}
-
 .communitynav p {
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
