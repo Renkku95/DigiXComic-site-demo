@@ -204,7 +204,7 @@
 	</div><!--mobile navigation-->
 	
 	<div id="topmenubtnblock"> <!--mobile navigation button-->
-	<span>
+	<span onclick="openTopNav()">
 		<img alt="topmenubtn" src="kuvat/menutab_vertical.png" height="40" width="40" />
 	</span>
 	</div><!--mobile navigation button-->
@@ -641,6 +641,23 @@ else if (click == 1){
 
     document.getElementById("main").style.marginLeft= "4em"; /*margin-left of section*/
     document.getElementById("menubtnblock").style.marginLeft= "0"; /*Menu Button Movement*/
+    click--;
+    }
+}
+
+
+function openTopNav() {
+if (click == 0){
+    document.getElementById("myTopnav").style.height = 200 + "px"; /*the logo width here?*/
+	document.getElementById("topmenubtnblock").style.top = 37 + "%";
+    click++;
+}
+/*}
+
+function closeNav() { We use only one function*/
+else if (click == 1){
+    document.getElementById("myTopnav").style.height = "0";
+	document.getElementById("topmenubtnblock").style.top = 11.7 + "%";
     click--;
     }
 }
