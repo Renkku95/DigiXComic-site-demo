@@ -558,6 +558,13 @@ hr {
 	color:#757575;
 }
 
+.whiteBox{
+	background-color:rgba(255,255,255,0.95);
+	padding:2em;
+	border:solid black 2px;
+	border-radius:0.3em;
+}
+
 @media screen and (max-width: 1050px)
 and (min-width: 901px) {
 
@@ -1048,6 +1055,17 @@ and (min-width: 501px) {
 		width:100px;
 		height:100px;
 	}	
+	
+	.whiteBox {
+	padding-left:1em;
+	padding-right:1em;
+	padding-top:2em;
+	padding-bottom:2em;
+	}
+	
+	.seriesmenu {
+	display:none;
+	}
 
 
 }
@@ -1118,12 +1136,5 @@ and (min-height: 749px) {
 }
 
 
-
-.whiteBox{
-	background-color:rgba(255,255,255,0.95);
-	padding:2em;
-	border:solid black 2px;
-	border-radius:0.3em;
-}
 
 
