@@ -59,6 +59,7 @@ body {
 {
 	
 	min-height:100%;
+	width:100%;
 	background-image:url('kuvat/splotches_master2.png');                  
     background-repeat:   no-repeat;
     background-position: center center; 
@@ -318,6 +319,14 @@ input[type=text] {
 	font-size:36px;
 	margin-left: 50px;
 }*/
+
+.topnav {
+	display:none;
+}
+
+#topmenubtnblock {
+	display:none;
+}
 
 
 /*hidden navigation style ends*/
@@ -929,7 +938,7 @@ and (min-width: 501px) {
 	
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) { /*MOBILE*/
 
 	header {
 	min-height:70px;
@@ -948,8 +957,8 @@ and (min-width: 501px) {
 	
 	#communityLink {
 		left:32%;
-		min-width:150px;
-		min-height:40px;
+		min-width:120px;
+		min-height:32px;
 		width:20%;
 	}
 	
@@ -970,8 +979,8 @@ and (min-width: 501px) {
 	}
 
 	#hdpricon {
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	float:right;
 	}
 
@@ -987,18 +996,123 @@ and (min-width: 501px) {
 	width:235px;
 	top:50%;*/
 	}
+	
+	/*NAVIGATION starts here*/
 
 	.sidenav {
-	margin-top: 200px;
+	display:none;
 	}
 	
 	#menuheader {
-	margin-top: -185px;
+	display:none;
 	}
 	
 	#menubtnblock {
-	margin-top: -85px;
+	display:none;
 	}
+	
+	.topnav {
+	display:inline;
+	background-color:#f8f8f8;
+	width:305px;
+	position: fixed;
+	z-index: 79;
+	top:11.7%;
+	right: 25px;
+	margin-left:0;
+	border-left:solid black 2px;
+	border-bottom:solid black 2px;
+	border-right: solid black 2px;
+	border-radius: 3px;
+	}
+	
+	.justnav {
+	height:42px;
+	}
+	
+	.libtopnav {
+	height:200px;
+	}
+		
+	#topmenubtnblock {
+	display:inline;
+	position:fixed;
+	z-index:78;
+	top:11.7%;
+	right: 25px;
+	}
+	
+	#maintop {
+	width:100%;
+	margin-left:1.5em;
+	}
+	
+	.topnav a {
+	text-decoration: none;
+	display:inline;
+	}
+	
+	.maintopnav li {
+	display:inline;
+	padding:8px;
+	padding-left:20px;
+	padding-right:20px;
+	background:#bdbdbd;
+	border: solid #757575 1px;
+	}
+	
+	.maintopnav li a {
+	 color:white;
+	 font-family:Corbel;
+	}
+	
+	.maintopnav a:hover {
+	color:#757575;
+	}
+	
+	#subtop {
+	width: 100%;
+	margin-left:1.5em;
+	}
+	
+	.subtopnav li {
+		display:inline;
+		padding:8px;
+		padding-left:18px;
+		background:#bdbdbd;
+		border: solid #757575 1px;
+	}	
+	
+	.subtopnav li a {
+		color:white;
+		font-family:Corbel;
+	}
+	
+	.subtopnav a:hover {
+	color:#757575;
+	}
+	
+	#subsubtop {
+	width:100%;
+	margin-left:1.5em;
+	}
+	
+	.subsubtopnav {
+	margin-top:1em;
+	}
+	
+	.subsubtopnav li {
+	display:inline;
+	padding:8px;
+	}
+	
+	.subsubtopnav li a {
+	color:black;
+	font-size:small;
+	font-family:Corbel;
+	}
+	
+	/*NAVIGATION ends here*/
 
 	h2 {
 	font-size:18pt;
