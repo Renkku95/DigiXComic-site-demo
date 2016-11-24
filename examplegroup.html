@@ -111,6 +111,101 @@
 	</div>
 	
 	
+	<div id="myTopnav" class="topnav libtopnav"><!--mobile navigation-->
+	
+		<ul class="nav navbar-nav">
+			
+			<div id="maintop" class="navbar maintopnav">
+				<li>
+					<a href="publish.html">Publish</a>
+				</li>
+				<li>
+					<a href="library.html">Library</a>
+				</li>
+				<li>
+					<a href="support.html">Support</a>
+				</li>
+			</div>
+			
+			<div id="subtop" class="subtopnav">
+				<li>
+					<a>Genre</a>
+				</li>
+				<li>
+					<a>Price</a>
+				</li>
+				<li>
+					<a>Format</a>
+				</li>
+				<li>
+					<a>Series</a>
+				</li>
+				
+				
+			</div>
+			
+			<div id="subsubtop" class="subsubtopnav">
+				
+				<li>
+					<a>Horror</a>
+				</li>
+				
+				<li>
+					&nbsp;&nbsp;&nbsp;&nbsp;<a>Under 5€</a>
+				</li>
+				
+				<li>
+					<a>Webcomic</a>
+				</li>				
+				<li>
+					&nbsp;&nbsp;<a>Ongoing</a>
+				</li>
+				<br>
+				<li>
+					<a>Fantasy</a>
+				</li>
+				<li>
+					&nbsp;&nbsp;&nbsp;&nbsp;<a>5-10€</a>
+				</li>
+				<li>
+					<a>Graphic Novel</a>
+				</li>
+				<li>
+					<a>Complete</a>
+				</li>
+				<br>
+				<li>
+					<a>Sci-fi</a>
+				</li>
+				<li>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>10-25€</a>
+				</li>
+				<li>
+					&nbsp;<a>Comic Book</a>
+				</li>
+				<br>
+				<li>
+					<a>Comedy</a>
+				</li>
+				<li>
+				&nbsp;&nbsp;&nbsp;&nbsp;<a>25€ +</a>
+				</li>
+				
+			</div>
+			
+			
+		</ul> 
+	
+	</div><!--mobile navigation-->	
+	
+	
+	<div id="topmenubtnblock"> <!--mobile navigation button-->
+	<span onclick="openTopNav()">
+		<img alt="topmenubtn" src="kuvat/menutab_vertical.png" height="40" width="40" />
+	</span>
+	</div><!--mobile navigation button-->
+	
+	
 	<div id="main" > <!-- this is the content that's next to the hidden navigation bar, slides right when navigation opens-->
 	
 		<section> <!--the page, the place where content goes-->
@@ -372,6 +467,23 @@ else if (click == 1){
     click--;
     }
 }
+
+function openTopNav() {
+if (click == 0){
+    document.getElementById("myTopnav").style.height = 200 + "px"; /*top navigation open*/
+	document.getElementById("topmenubtnblock").style.top = "290px"; /*move navigation button*/
+    click++;
+}
+/*}
+
+function closeNav() { We use only one function*/
+else if (click == 1){
+    document.getElementById("myTopnav").style.height = "0"; /*hide navigation*/
+	document.getElementById("topmenubtnblock").style.top = "96px"; /*move navigation button*/
+    click--;
+    }
+}
+
 </script>
 
 <!--carousel flickity-->
