@@ -941,8 +941,7 @@ and (min-width: 501px) {
 @media screen and (max-width: 500px) { /*MOBILE*/
 
 	header {
-	min-height:70px;
-	height: 12%;
+	height:96px;
 	}
 	
 	#logo {
@@ -997,6 +996,10 @@ and (min-width: 501px) {
 	top:50%;*/
 	}
 	
+	.libmenu {
+	display:none;
+	}
+	
 	/*NAVIGATION starts here*/
 
 	.sidenav {
@@ -1017,13 +1020,14 @@ and (min-width: 501px) {
 	width:305px;
 	position: fixed;
 	z-index: 79;
-	top:11.7%;
+	top:96px;
 	right: 25px;
 	margin-left:0;
 	border-left:solid black 2px;
 	border-bottom:solid black 2px;
 	border-right: solid black 2px;
 	border-radius: 3px;
+	transition:0.5s;
 	}
 	
 	.justnav {
@@ -1039,8 +1043,9 @@ and (min-width: 501px) {
 	display:inline;
 	position:fixed;
 	z-index:78;
-	top:11.7%;
+	top:96px;
 	right: 25px;
+	transition:0.5s;
 	}
 	
 	#maintop {
