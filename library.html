@@ -648,16 +648,16 @@ else if (click == 1){
 
 function openTopNav() {
 if (click == 0){
-    document.getElementById("myTopnav").style.height = 200 + "px"; /*the logo width here?*/
-	document.getElementById("topmenubtnblock").style.top = 17.6 + "em";
+    document.getElementById("myTopnav").style.height = 200 + "px"; /*top navigation open*/
+	document.getElementById("topmenubtnblock").style.top = 265 + "px"; /*move navigation button*/
     click++;
 }
 /*}
 
 function closeNav() { We use only one function*/
 else if (click == 1){
-    document.getElementById("myTopnav").style.height = "0";
-	document.getElementById("topmenubtnblock").style.top = 11.7 + "%";
+    document.getElementById("myTopnav").style.height = "0"; /*hide navigation*/
+	document.getElementById("topmenubtnblock").style.top = 11.7 + "%"; /*move navigation button*/
     click--;
     }
 }
