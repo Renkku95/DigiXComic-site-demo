@@ -129,3 +129,25 @@ http://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
+
+
+@media screen and (max-width: 500px) {
+
+	.flickity-prev-next-button {
+	width:30px;
+	height:30px;
+	}
+
+	.flickity-prev-next-button.previous { left: -55px; }
+	.flickity-prev-next-button.next { right: -55px; }
+
+	.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 5px;
+	}
+	.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 5px;
+	}
+
+}

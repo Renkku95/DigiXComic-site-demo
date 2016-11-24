@@ -642,7 +642,7 @@ and (min-width: 901px) {
 }
 
 @media screen and (max-width: 900px) 
-and (min-width: 768px) {
+and (min-width: 775px) {
 
 	header {
 	min-height:150px;
@@ -731,13 +731,12 @@ and (min-width: 768px) {
 	
 }
 
-@media screen and (max-width: 767px) 
+@media screen and (max-width: 774px) 
 and (min-width: 701px) {
 
 	
 	header {
-	min-height:120px;
-	height: 15%
+	height:96px;
 	}
 	
 	#logo {
@@ -766,7 +765,8 @@ and (min-width: 701px) {
 	}
 	
 	#profileboxtext {
-	width:50%;
+	display:none;
+	width:0;
 	}
 
 	#hdpricon {
@@ -776,12 +776,12 @@ and (min-width: 701px) {
 	}
 
 	#flagprof {
-	width:30px;
-	height:17px;
+	display:none;
 	}
 
 	#searchbox {
-	left:32%;
+	
+	left:52%;
 	width:235px;
 	top:50%;
 	}
@@ -830,6 +830,127 @@ and (min-width: 701px) {
 	display:none;
 	}
 	
+	.libmenu {
+	display:none;
+	}
+	
+	/*NAVIGATION starts here*/
+
+	.sidenav {
+	display:none;
+	}
+	
+	#menuheader {
+	display:none;
+	}
+	
+	#menubtnblock {
+	display:none;
+	}
+	
+	.topnav {
+	display:inline;
+	background-color:#f8f8f8;
+	width:305px;
+	position: fixed;
+	z-index: 79;
+	top:96px;
+	right: 25px;
+	margin-left:0;
+	border-left:solid black 2px;
+	border-bottom:solid black 2px;
+	border-right: solid black 2px;
+	border-radius: 3px;
+	transition:0.5s;
+	}
+		
+	.libtopnav {
+	height:0px;
+	overflow:hidden;
+	}
+		
+	#topmenubtnblock {
+	display:inline;
+	position:fixed;
+	z-index:78;
+	top:96px;
+	right: 25px;
+	transition:0.5s;
+	}
+	
+	#maintop {
+	width:100%;
+	margin-left:1.5em;
+	}
+	
+	.topnav a {
+	text-decoration: none;
+	display:inline;
+	}
+	
+	.maintopnav li {
+	display:inline;
+	padding:8px;
+	padding-left:20px;
+	padding-right:20px;
+	background:#bdbdbd;
+	border: solid #757575 1px;
+	}
+	
+	.maintopnav li a {
+	 color:white;
+	 font-family:Corbel;
+	}
+	
+	.maintopnav a:hover {
+	color:#757575;
+	}
+	
+	#subtop {
+	width: 100%;
+	margin-left:1.5em;
+	}
+	
+	.subtopnav li {
+		display:inline;
+		padding:8px;
+		padding-left:18px;
+		background:#bdbdbd;
+		border: solid #757575 1px;
+	}	
+	
+	.subtopnav li a {
+		color:white;
+		font-family:Corbel;
+	}
+	
+	.subtopnav a:hover {
+	color:#757575;
+	}
+	
+	#subsubtop {
+	width:100%;
+	margin-left:1.5em;
+	}
+	
+	.subsubtopnav {
+	margin-top:1em;
+	}
+	
+	.subsubtopnav li {
+	display:inline;
+	padding:8px;
+	}
+	
+	.subsubtopnav li a {
+	color:black;
+	font-size:small;
+	font-family:Corbel;
+	}
+	
+	/*NAVIGATION ends here*/
+
+	
 	
 }
 
@@ -837,8 +958,7 @@ and (min-width: 701px) {
 and (min-width: 501px) {
 
 	header {
-	min-height:120px;
-	height: 15%
+	height:96px;
 	}
 	
 	#logo {
@@ -881,14 +1001,14 @@ and (min-width: 501px) {
 	}
 
 	#flagprof {
-	width:30px;
-	height:17px;
+	display:none;
 	}
 
 	#searchbox {
-	left:30%;
+	display:none;
+	/*left:30%;
 	width:235px;
-	top:50%;
+	top:50%;*/
 	}
 	
 	.sidenav {
@@ -933,6 +1053,127 @@ and (min-width: 501px) {
 	.adHolder {
 	display:none;
 	}
+	
+	.libmenu {
+	display:none;
+	}
+	
+	/*NAVIGATION starts here*/
+
+	.sidenav {
+	display:none;
+	}
+	
+	#menuheader {
+	display:none;
+	}
+	
+	#menubtnblock {
+	display:none;
+	}
+	
+	.topnav {
+	display:inline;
+	background-color:#f8f8f8;
+	width:305px;
+	position: fixed;
+	z-index: 79;
+	top:96px;
+	right: 25px;
+	margin-left:0;
+	border-left:solid black 2px;
+	border-bottom:solid black 2px;
+	border-right: solid black 2px;
+	border-radius: 3px;
+	transition:0.5s;
+	}
+		
+	.libtopnav {
+	height:0px;
+	overflow:hidden;
+	}
+		
+	#topmenubtnblock {
+	display:inline;
+	position:fixed;
+	z-index:78;
+	top:96px;
+	right: 25px;
+	transition:0.5s;
+	}
+	
+	#maintop {
+	width:100%;
+	margin-left:1.5em;
+	}
+	
+	.topnav a {
+	text-decoration: none;
+	display:inline;
+	}
+	
+	.maintopnav li {
+	display:inline;
+	padding:8px;
+	padding-left:20px;
+	padding-right:20px;
+	background:#bdbdbd;
+	border: solid #757575 1px;
+	}
+	
+	.maintopnav li a {
+	 color:white;
+	 font-family:Corbel;
+	}
+	
+	.maintopnav a:hover {
+	color:#757575;
+	}
+	
+	#subtop {
+	width: 100%;
+	margin-left:1.5em;
+	}
+	
+	.subtopnav li {
+		display:inline;
+		padding:8px;
+		padding-left:18px;
+		background:#bdbdbd;
+		border: solid #757575 1px;
+	}	
+	
+	.subtopnav li a {
+		color:white;
+		font-family:Corbel;
+	}
+	
+	.subtopnav a:hover {
+	color:#757575;
+	}
+	
+	#subsubtop {
+	width:100%;
+	margin-left:1.5em;
+	}
+	
+	.subsubtopnav {
+	margin-top:1em;
+	}
+	
+	.subsubtopnav li {
+	display:inline;
+	padding:8px;
+	}
+	
+	.subsubtopnav li a {
+	color:black;
+	font-size:small;
+	font-family:Corbel;
+	}
+	
+	/*NAVIGATION ends here*/
+
 
 
 	
@@ -1182,7 +1423,8 @@ and (min-width: 501px) {
 	.seriesmenu {
 	display:none;
 	}
-
+	
+		
 
 }
 
