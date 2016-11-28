@@ -411,7 +411,8 @@ h2 {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	font-size:30pt;
 	font-family: myFontBold;
-	padding:1em;
+	padding-top:1em;
+	padding-right:1em;
 	/*Dillenia UPC Regular*/
 }
 
