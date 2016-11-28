@@ -331,6 +331,10 @@ input[type=text] {
 	display:none;
 }
 
+.darker {
+	background-color: #a9a8a8;
+	}
+
 
 /*hidden navigation style ends*/
 
@@ -980,7 +984,7 @@ and (min-width: 701px) {
 	font-size:small;
 	font-family:Corbel;
 	}
-	
+		
 	/*NAVIGATION ends here*/
 
 	
