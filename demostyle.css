@@ -149,6 +149,7 @@ header { /*header*/
 #yourpagelink a {
 	color:white;
 	font-family:Corbel;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #yourpagelink a:hover {
@@ -192,6 +193,7 @@ header { /*header*/
 	padding-left:0.5em;
 	color: white;
 	font-family:Corbel;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	outline: none;
 	background:#bdbdbd;
 	border: solid #757575 1px;
@@ -306,6 +308,7 @@ input[type=text] {
 .sidenav li a {
 	color:white;
 	font-family:Corbel;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .sidenav a:hover, .offcanvas a:focus {
@@ -928,6 +931,7 @@ and (min-width: 701px) {
 	.maintopnav li a {
 	 color:white;
 	 font-family:Corbel;
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
 	
 	.maintopnav a:hover {
@@ -950,6 +954,7 @@ and (min-width: 701px) {
 	.subtopnav li a {
 		color:white;
 		font-family:Corbel;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
 	
 	.subtopnav a:hover {
