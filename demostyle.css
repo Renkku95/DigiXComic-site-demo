@@ -684,6 +684,10 @@ and (min-width: 901px) {
 	#menubtnblock {
 	margin-top: -85px;
 	}
+	
+	section {
+	margin-top: 130px;
+	}
 
 }
 
@@ -752,6 +756,11 @@ and (min-width: 775px) {
 	#menubtnblock {
 	margin-top: -85px;
 	}
+	
+	section {
+	margin-top: 130px;
+	}
+
 
 
 	h2 {
@@ -843,6 +852,11 @@ and (min-width: 701px) {
 	#menubtnblock {
 	margin-top: -85px;
 	}
+	
+	section {
+	margin-top: 90px;
+	}
+
 
 	h2 {
 	font-size:18pt;
@@ -869,6 +883,12 @@ and (min-width: 701px) {
 	#magnifyingglass {
 	width:20px;
 	height:21px;
+	}
+	
+	#main {
+	padding:5px;
+	margin-left:1.7em;
+	margin-right:1.7em;
 	}
 	
 	
@@ -1070,6 +1090,11 @@ and (min-width: 501px) {
 	#menubtnblock {
 	margin-top: -85px;
 	}
+	
+	section {
+	margin-top: 90px;
+	}
+
 
 	h2 {
 	font-size:18pt;
@@ -1095,6 +1120,12 @@ and (min-width: 501px) {
 	#magnifyingglass {
 	width:20px;
 	height:21px;
+	}
+	
+	#main {
+	padding:5px;
+	margin-left:1em;
+	margin-right:1em;
 	}
 	
 	
