@@ -1533,6 +1533,7 @@ and (min-height: 749px) {
 	.sidenav a {font-size: 18px;}
 }
 
+
 @media screen and (max-height: 748px) {
 
 	header {
@@ -1544,16 +1545,20 @@ and (min-height: 749px) {
 		width:90%;
 	}
 	
+	#communityLink {
+		left:23%;
+	}
+		
 	#communityLink img {
-	width:50%;
+	width:75%;
 	min-width:120px;
 	min-height:32px;
 	}
 	
 	#searchbox {
-	left:32%;
+	left:42%;
 	width:30%;
-	top:48%;
+	top:40%;
 	}
 	
 	#magnifyingglass {
@@ -1590,5 +1595,37 @@ and (min-height: 749px) {
 }
 
 
+@media screen and (max-height: 748px)
+and (max-width: 1050px)
+and (min-width: 901px) {
+	
+	#searchbox {
+		top: 60%;
+	}
+	
+	#profileboxtext {
+		left:4em;
+	}
 
+}
+
+@media screen and (max-height: 748px)
+and (max-width: 900px) 
+and (min-width: 775px) {
+	
+	#searchbox {
+		top:60%;
+	}
+	
+	#profileboxtext {
+		left:4em;
+	}
+}
+
+@media screen and (max-height:748px)
+and (max-width: 500px) {
+	#communityLink {
+		left:28%;
+	}
+}
 
