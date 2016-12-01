@@ -601,6 +601,10 @@ hr {
 	height:400px; width:250px; padding-left:25px; padding-right:25px; border: solid black 1px; margin:auto;
 }
 
+.carouselpic img {
+	border:solid black 1px;
+}
+
 .carouselpic a:hover{
 	background-color:#A9A9A9;
 }
