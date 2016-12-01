@@ -8,6 +8,11 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="demostyle.css" rel="stylesheet" type="text/css" />
 <link href="css/flickity.css" rel="stylesheet" type="text/css" />
+
+<!--Bootstrap scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -50,7 +55,17 @@
 				<a href="myprofile.html">Your Page</a>
 				</div>
 				
-				<img id="flagprof" alt="languageflag" height="52" src="kuvat/lippu.png" width="92" />
+				<div class="dropdown"> <!--Dropdown menu for language selection-->
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:white; border:none;"><img id="flagprof" alt="languageflag" height="52" src="kuvat/lippu.png" width="92" />
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu"><!--List of elements in the menu-->
+						<li><a href="#"><img id="flagproffin" alt="languageflag" height="52" src="kuvat/lippu.png" width="92" onclick="Fin()" /></a></li>
+						<li><a href="#"><img id="flagprofeng" alt="languageflag" height="52" src="kuvat/lippu_uk_border.png" width="92" onclick="Eng()" /></a></li>
+					</ul>
+				</div>
+				<!--<img id="flagprof" alt="languageflag" height="52" src="kuvat/lippu.png" width="92" />-->
+			
+
 			
 			</div> <!--profilebox text and flag-->
 			
@@ -280,6 +295,10 @@ else if (click == 1){
     click--;
     }
 }
+
+function Fin(){document.getElementById("flagprof").src = "kuvat/lippu.png";}
+function Eng(){document.getElementById("flagprof").src = "kuvat/lippu_uk_border.png";}
+
 
 </script>
 
