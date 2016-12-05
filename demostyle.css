@@ -639,7 +639,7 @@ hr {
 .carouselpic a:link .addinfo{
 	text-decoration: none;
 }
-.carouselpic a:hover .addinfo {
+.carousel-cell:hover .addinfo {
 	display:block;
 	text-decoration: none;
 	
@@ -1213,6 +1213,7 @@ and (min-width: 501px) {
 	
 	.topnav a {
 	text-decoration: none;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	display:inline;
 	}
 	
@@ -1223,11 +1224,13 @@ and (min-width: 501px) {
 	padding-right:20px;
 	background:#bdbdbd;
 	border: solid #757575 1px;
+
 	}
 	
 	.maintopnav li a {
 	 color:white;
 	 font-family:Corbel;
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
 	
 	.maintopnav a:hover {
@@ -1245,11 +1248,13 @@ and (min-width: 501px) {
 		padding-left:18px;
 		background:#bdbdbd;
 		border: solid #757575 1px;
+		
 	}	
 	
 	.subtopnav li a {
 		color:white;
 		font-family:Corbel;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
 	
 	.subtopnav a:hover {
