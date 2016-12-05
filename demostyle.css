@@ -1213,7 +1213,6 @@ and (min-width: 501px) {
 	
 	.topnav a {
 	text-decoration: none;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	display:inline;
 	}
 	
@@ -1224,7 +1223,7 @@ and (min-width: 501px) {
 	padding-right:20px;
 	background:#bdbdbd;
 	border: solid #757575 1px;
-
+	box-shadow: 3px 3px #757575;
 	}
 	
 	.maintopnav li a {
@@ -1248,7 +1247,7 @@ and (min-width: 501px) {
 		padding-left:18px;
 		background:#bdbdbd;
 		border: solid #757575 1px;
-		
+		box-shadow: 3px 3px #757575;
 	}	
 	
 	.subtopnav li a {
@@ -1401,7 +1400,6 @@ and (min-width: 501px) {
 	
 	.topnav a {
 	text-decoration: none;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	display:inline;
 	}
 	
@@ -1412,6 +1410,7 @@ and (min-width: 501px) {
 	padding-right:20px;
 	background:#bdbdbd;
 	border: solid #757575 1px;
+	box-shadow: 3px 3px #757575;
 
 	}
 	
@@ -1436,6 +1435,7 @@ and (min-width: 501px) {
 		padding-left:18px;
 		background:#bdbdbd;
 		border: solid #757575 1px;
+		box-shadow: 3px 3px #757575;
 		
 	}	
 	
